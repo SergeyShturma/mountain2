@@ -617,6 +617,7 @@ nav {
 }
 
 .modal {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -631,7 +632,6 @@ nav {
 }
 
 .btn-modal {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -647,4 +647,11 @@ nav {
 
 .btn-modal-icon {
   fill: var(--studio-header-color);
+}
+
+.joke {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 50%;
+  border-bottom: 1px solid #eeeeee;
 }
