@@ -34,21 +34,27 @@
             <!-- <li class="menu-item"><a class="menu-link link hover" href="#">Контакти</a></li> -->
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="contact-item">
-            <a class="contact-info link hover" href="tel:+380990448874">
-              <svg lang="en" aria-label="envelope icon" class="contact-icon" width="10" height="16">
+       <ul class="contact list">
+          <li class="contact__item">
+            <a class="contact__info link hover" href="tel:+380990448874">
+              <svg
+                lang="en"
+                aria-label="envelope icon"
+                class="contact__icon"
+                width="10"
+                height="16"
+              >
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 099 044 88 74</a
             >
           </li>
-          <li class="contact-item">
-            <a class="contact-info link hover" href="tel:+380677392126">
+          <li class="contact__item">
+            <a class="contact__info link hover" href="tel:+380677392126">
               <svg
                 lang="en"
                 aria-label="smartphone icon"
-                class="contact-icon"
+                class="contact__icon"
                 width="10"
                 height="16"
               >
@@ -311,36 +317,36 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer__container container">
         <div>
-          <a class="logo-footer link" href="./index.html"
-            ><span class="logo-web">The</span><span class="footer-logo-studio"> Mountain</span></a
+          <a class="footer__logo link" href="./index.html"
+            ><span class="logo-web">The</span><span class="footer__logo-studio">Mountain</span></a
           >
           <address class="address">
             <ul class="list">
-              <!-- <li>
+              <li class="address__item">
                 <a
-                  class="address-link link"
-                  href="https://goo.gl/maps/EYqhjELSdJhmkw51A"
+                  class="address__link link"
+                  href="#"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  >м. Київ</a
                 >
-              </li> -->
-              <li>
+              </li>
+              <li class="address__item">
                 <a class="contact-link link hover" href="tel:+380990448874">+38 099 044 88 74</a>
               </li>
-              <li>
+              <li class="address__item">
                 <a class="contact-link link hover" href="tel:+380677392126">+38 067 739 21 26</a>
               </li>
             </ul>
           </address>
         </div>
-        <!-- <div class="footer-socials">
-          <p class="footer-invitation">приєднуйтесь</p>
+        <div class="footer__socials">
+          <p class="footer__invitation">приєднуйтесь</p>
           <ul class="social-list list">
             <li>
-              <a href="#" class="social-list-link footer-fill-link link">
+              <a href="#" class="social-list__link footer__fill link">
                 <svg
                   lang="en"
                   aria-label="instagram icon"
@@ -353,7 +359,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="social-list-link footer-fill-link link">
+              <a href="#" class="social-list__link footer__fill link">
                 <svg
                   lang="en"
                   aria-label="twitter icon"
@@ -366,7 +372,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="social-list-link footer-fill-link link">
+              <a href="#" class="social-list__link footer__fill link">
                 <svg
                   lang="en"
                   aria-label="facebook icon"
@@ -379,7 +385,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="social-list-link footer-fill-link link">
+              <a href="#" class="social-list__link footer__fill link">
                 <svg
                   lang="en"
                   aria-label="linkedin icon"
@@ -392,7 +398,26 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
+        <div class="footer__subscription">
+          <p class="footer__invitation">підпишіться на розсилку</p>
+          <form class="footer__form">
+            <input
+              type="email"
+              class="footer__input"
+              name="user-email"
+              placeholder="E-mail"
+              autocomplete="email"
+              required
+            />
+            <button class="footer__btn" type="submit">
+              Підписатися
+              <svg lang="en" aria-label="send icon" class="btn__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
